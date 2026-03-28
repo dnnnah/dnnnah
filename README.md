@@ -34,7 +34,7 @@ var (
 
 func main() {
 	// Let's start
-	fmt.Println("GOla Mundo!")
+	fmt.Println("GOla World!")
 
 	// Current Goal
 	fmt.Printf("\nCurrently learning: How to effectively use AI tools, master Go, and become a better developer.\n")
@@ -48,7 +48,6 @@ func main() {
 	
 	status, err := ExistentialCheck()
 	if err != nil {
-		// [ES]: Si la vida es imposible, la gente programa en PHP.
 		fmt.Printf("Critical Error: %v\n", err)
 		fmt.Println("Status: People are coding in PHP.")
 		return

@@ -1,4 +1,4 @@
-# [username]'s GitHub Profile
+# dnnnah's GitHub Profile
 
 ```go
 package main
@@ -45,7 +45,7 @@ var (
 )
 
 func main() {
-	// Let's start with the classic (Go-style)
+	// Let's start
 	fmt.Println("Gola Mundo!") //
 
 	// Current Goal

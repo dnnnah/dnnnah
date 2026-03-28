@@ -24,7 +24,7 @@ var (
 	// currentProfile is the global state for the developer's metadata
 	currentProfile = DevProfile{
 		Name:       "dnnnah",
-		Role:       "Fullstack Developer & AI Automation Enthusiast",
+		Role:       "Constant Learner, Go developer & AI Automation Enthusiast",
 		Philosophy: "Build for scale, automate the mundane, and maintain high cohesion.",
 		Stack: map[string][]string{
 			"Languages":  {"Go", "Python", "TypeScript"},

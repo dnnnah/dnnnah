@@ -52,7 +52,7 @@ func main() {
 	fmt.Printf("\nCurrently learning: How to effectively use AI tools, master Go, and become a better developer.\n")
 
 	// Joke
-	fmt.Println("\n-- Dostoevsky's Dev Philosophy --")
+	fmt.Println("\n-- Dostoevsky's Philosophy --")
 	fmt.Println("\"We sometimes encounter people, even perfect strangers, who begin to interested us at first sight, before we have said a single word. Especially if they have clean git history.\"\n")
 
 	// Off-screen Activities

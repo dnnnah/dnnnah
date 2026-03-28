@@ -34,7 +34,7 @@ var (
 
 func main() {
 	// Let's start
-	fmt.Println("GOla World!")
+	fmt.Println("Hello World!")
 
 	// Current Goal
 	fmt.Printf("\nCurrently learning: How to effectively use AI tools, master Go, and become a better developer.\n")

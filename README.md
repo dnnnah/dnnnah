@@ -1,4 +1,4 @@
-# dnnah's GitHub Profile
+# dnnnah's GitHub Profile
 
 ```go
 package main
@@ -19,7 +19,7 @@ type DevProfile struct {
 var (
 	// My current focus and tools
 	currentProfile = DevProfile{
-		Name:       "dnnah",
+		Name:       "dnnnah",
 		Role:       "Constant Learner of New Technologies",
 		Philosophy: "Write once, do it right, and automate everything. Aim for scalability.",
 		Stack: map[string][]string{

@@ -6,9 +6,13 @@ package main
 import (
 	"errors"
 	"fmt"
+	"os"
 )
 
-// DevProfile defines who I am
+// Sentinel errors for graceful failure handling
+var ErrExistentialChaos = errors.New("entropy detected: environment is unconstrained")
+
+// DevProfile defines the core attributes and tech stack
 type DevProfile struct {
 	Name       string
 	Role       string
@@ -17,51 +21,51 @@ type DevProfile struct {
 }
 
 var (
-	// My current focus and tools
+	// currentProfile is the global state for the developer's metadata
 	currentProfile = DevProfile{
 		Name:       "dnnnah",
-		Role:       "Constant Learner of New Technologies",
-		Philosophy: "Write once, do it right, and automate everything. Aim for scalability.",
+		Role:       "Fullstack Developer & AI Automation Enthusiast",
+		Philosophy: "Build for scale, automate the mundane, and maintain high cohesion.",
 		Stack: map[string][]string{
-			"Languages":       {"Go", "Python", "JavaScript"},
-			"Frameworks/Libs": {"React"},
-			"Databases":       {"SQL"},
-			"Tools":           {"VS Code", "AI Integration"},
-			"Environments":    {"Mac", "Linux"},
+			"Languages":  {"Go", "Python", "TypeScript"},
+			"Frameworks": {"React", "Vite", "Tailwind"},
+			"Databases":  {"SQL", "Supabase"},
+			"Tools": {"VS Code", "Postman", "AI Integration"},
+			"Environments": {"macOS", "Linux"},
 		},
 	}
 )
 
 func main() {
-	// Let's start
-	fmt.Println("Hello World!")
+	// Initialize profile output
+	fmt.Printf(">> Loading profile: %s\n", currentProfile.Name)
+	fmt.Printf(">> Current Focus: Mastering Go Concurrency & Cloud Automation\n\n")
 
-	// Current Goal
-	fmt.Printf("\nCurrently learning: How to effectively use AI tools, master Go, and become a better developer.\n")
-
-	// Off-screen Activities
-	fmt.Printf("When I'm not coding, I enjoy watching series/movies and playing casual video games.\n\n")
-
-	// --- Philosophical Debugging (Dostoyevsky Logic) ---
-	// "If God does not exist, everything is permitted; 
+	// --- Philosophical Logic Check ---
+	// "If God does not exist, everything is permitted;
 	// and if everything is permitted, life is impossible."
 	
 	status, err := ExistentialCheck()
 	if err != nil {
-		fmt.Printf("Critical Error: %v\n", err)
-		fmt.Println("Status: People are coding in PHP.")
+		// Log error to stderr and fallback to legacy stack
+		fmt.Fprintf(os.Stderr, "Fatal: %v\n", err)
+		fmt.Println("Status: Permission level 'Everything'. Forced to program in PHP.")
 		return
 	}
 
+	// Logic holds: Proceed with Go execution
 	fmt.Println(status)
 }
 
+// ExistentialCheck evaluates the current permission level of the environment
 func ExistentialCheck() (string, error) {
-	lifeIsPossible := false
+	// In this simulation, absolute permission leads to chaos (PHP)
+	everythingIsPermitted := true
 
-	if !lifeIsPossible {
-		return "", errors.New("life is impossible (permission level: everything)")
+	if everythingIsPermitted {
+		// Return zero-value and the wrapped sentinel error
+		return "", fmt.Errorf("runtime_exception: %w", ErrExistentialChaos)
 	}
 
-	return "go run main.go", nil
+	return "Status: Constraints active. Optimizing in Go...", nil
 }

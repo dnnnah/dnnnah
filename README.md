@@ -40,18 +40,18 @@ var (
 	// My digital presence
 	myLinkedIn = ContactInfo{
 		Platform: "LinkedIn",
-		URL:      "https://www.linkedin.com/in/donnovan-tc/", // <-- REEMPLAZA ESTO
+		URL:      "https://www.linkedin.com/in/donnovan-tc/",
 	}
 )
 
 func main() {
 	// Let's start with the classic (Go-style)
-	fmt.Println("Gola Mundo!") // [Spanish: ¡Hola Mundo!]
+	fmt.Println("Gola Mundo!") //
 
 	// Current Goal
 	fmt.Printf("\nCurrently learning: How to effectively use AI tools, master Go, and become a better developer.\n")
 
-	// Dostoevsky joke
+	// Joke
 	fmt.Println("\n-- Dostoevsky's Dev Philosophy --")
 	fmt.Println("\"We sometimes encounter people, even perfect strangers, who begin to interested us at first sight, before we have said a single word. Especially if they have clean git history.\"\n")
 

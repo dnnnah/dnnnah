@@ -25,7 +25,7 @@ var (
 	currentProfile = DevProfile{
 		Name:       "dnnnah",
 		Role:       "Constant Learner, Go developer & AI Automation Enthusiast",
-		Philosophy: "Build for scale, automate the mundane, and maintain high cohesion.",
+		Philosophy: "Write once, do it right, and automate everything.",
 		Stack: map[string][]string{
 			"Languages":  {"Go", "Python", "TypeScript"},
 			"Frameworks": {"React", "Vite", "Tailwind"},

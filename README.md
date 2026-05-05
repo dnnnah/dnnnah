@@ -23,7 +23,7 @@ type DevProfile struct {
 var (
 	// currentProfile is the global state for the developer's metadata
 	currentProfile = DevProfile{
-		Name:       "dnnnah",
+		Name:       "Donnovan Trejo",
 		Role:       "Constant Learner, Go developer & AI Automation Enthusiast",
 		Philosophy: "Write once, do it right, and automate everything.",
 		Stack: map[string][]string{

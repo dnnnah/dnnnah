@@ -23,8 +23,8 @@ const currentProfile: DevProfile = {
   stack: {
     core: ["TypeScript", "JavaScript (ESNext)", "React", "HTML5/CSS3"],
     styling: ["Tailwind CSS", "Flexbox", "Responsive Design", "CSS Modules"],
-    ecosystem: ["Vite", "Next.js", "Zustand / Redux", "React Router"],
-    tooling: ["VS Code", "Git / GitHub", "Figma", "macOS"],
+    ecosystem: ["Vite", "Jest" "Zustand / Redux", "React Router"],
+    tooling: ["VS Code", "Git / GitHub", "LLMs", "macOS"],
   },
 };
 

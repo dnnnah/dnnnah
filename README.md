@@ -46,7 +46,7 @@ export const Profile: React.FC = () => {
         </div>
 
         <a
-          href="[https://dnnnah.dev](https://dnnnah.dev)"
+          href="[https://dnnnah.netlify.app/](https://dnnnah.netlify.app/)"
           className="rotate-[-3deg] rounded-sm border border-[#171717] bg-[#B8FF65] px-2.5 py-1 font-display text-[11px] font-semibold text-[#171717] shadow-[2px_2px_0px_0px_#171717] transition hover:rotate-0"
         >
           dnnnah.dev ↗

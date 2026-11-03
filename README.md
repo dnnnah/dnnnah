@@ -1,3 +1,6 @@
+# dnnnah's GitHub Profile
+
+```tsx
 import React, { useState } from "react";
 
 // Tipado y contratos
@@ -14,7 +17,7 @@ interface DevProfile {
   manifesto: string;
   description: string;
   principle: string;
-  channels: Channel[];
+  channels: readonly Channel[];
   stack: {
     core: readonly string[];
     styling: readonly string[];
@@ -29,16 +32,16 @@ const currentProfile: DevProfile = {
   role: "Frontend Developer + AI-Assisted Engineering",
   manifesto: "Diseño la lógica. Dirijo la creación. Respondo por el resultado.",
   description:
-    "Dirijo la arquitectura y coordino agentes de IA para convertir ideas en experiencias digitales. Combino desarrollo web sólido con diseño editorial e interfaces con personalidad propia.",
+    "Dirijo la arquitectura y coordino agentes de IA para convertir ideas en experiencias digitales. Combino desarrollo web sólido con arquitectura de componentes e interfaces con personalidad propia.",
   principle: "Intención en cada decisión.",
   channels: [
-    { platform: "Portfolio", handle: "dnnnah.dev", url: "https://dnnnah.dev" },
-    { platform: "LinkedIn", handle: "in/donnovan-tc", url: "https://linkedin.com/in/donnovan-tc" },
+    { platform: "Portfolio", handle: "dnnnah.dev", url: "[https://dnnnah.dev](https://dnnnah.dev)" },
+    { platform: "LinkedIn", handle: "in/donnovan-tc", url: "[https://linkedin.com/in/donnovan-tc](https://linkedin.com/in/donnovan-tc)" },
     { platform: "Email", handle: "dnnnah@icloud.com", url: "mailto:dnnnah@icloud.com" },
   ],
   stack: {
     core: ["TypeScript", "React 19", "JavaScript (ESNext)", "HTML5 / CSS3"],
-    styling: ["Tailwind CSS", "Editorial CSS", "Space Grotesk", "Fluid Typography"],
+    styling: ["Tailwind CSS", "Design Systems", "Space Grotesk", "Fluid Typography"],
     ecosystem: ["Vite", "Zustand / Redux", "Vitest", "Vercel Functions"],
     tooling: ["VS Code", "Git / GitHub", "macOS", "AI Agents Workflow"],
   },
@@ -57,15 +60,15 @@ export const DnnnahProfile: React.FC = () => {
           <span>/</span>
           <span>Creative Workspace</span>
         </div>
-        <span className="rounded border border-[#D8D6CF] bg-white px-2 py-0.5 text-[11px]">
-          Editorial Playground 75/25
+        <span className="rounded border border-[#D8D6CF] bg-white px-2 py-0.5 text-[11px] text-zinc-600">
+          Interactive Workspace
         </span>
       </div>
 
       {/* Masthead con Monograma D. y Badges inclinados */}
       <header className="mt-6 flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#171717] font-display text-2xl font-bold text-white">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#171717] font-display text-2xl font-bold text-white shadow-sm">
             {currentProfile.brand}
           </div>
           <div>
@@ -119,9 +122,9 @@ export const DnnnahProfile: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer y Enlaces */}
+      {/* Footer y Canales */}
       <footer className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-[#D8D6CF] pt-4 font-mono text-xs">
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {currentProfile.channels.map((ch) => (
             <a
               key={ch.platform}
@@ -139,3 +142,4 @@ export const DnnnahProfile: React.FC = () => {
 };
 
 export default DnnnahProfile;
+```
